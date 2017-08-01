@@ -10,7 +10,7 @@
 
 @implementation UIView (HZExtend)
 
-#pragma mark - Location
+#pragma mark - Properties
 - (CGPoint)origin
 {
     return self.frame.origin;
@@ -71,7 +71,6 @@
     self.frame = newframe;
 }
 
-#pragma mark - Center
 - (CGFloat)centerX
 {
     return self.center.x;
@@ -96,7 +95,6 @@
     self.center = newCenter;
 }
 
-#pragma mark - Size
 - (CGSize)size
 {
     return self.frame.size;
@@ -133,53 +131,31 @@
     self.frame = newframe;
 }
 
-#pragma mark - Other Origin
-- (void)setBottomRight:(CGPoint)bottomRight
+- (UIViewController *)viewController
 {
-    CGRect newframe = self.frame;
-    newframe.origin.x = bottomRight.x-self.width;
-    newframe.origin.y = bottomRight.y-self.height;
-    self.frame = newframe;
+    for (UIView *view = self; view; view = view.superview) {
+        UIResponder *nextResponder = [view nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
+        }
+    }
+    return nil;
 }
 
-- (CGPoint)bottomRight
+#pragma mark - Public Method
+- (UIImage *)snapshotImageAfterScreenUpdates:(BOOL)afterUpdates
 {
-    CGFloat x = self.frame.origin.x + self.frame.size.width;
-    CGFloat y = self.frame.origin.y + self.frame.size.height;
-    return CGPointMake(x, y);
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, 0);
+    [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:afterUpdates];
+    UIImage *snap = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return snap;
 }
 
-- (void)setBottomLeft:(CGPoint)bottomLeft
-{
-    CGRect newframe = self.frame;
-    newframe.origin.x = bottomLeft.x;
-    newframe.origin.y = bottomLeft.y-self.height;
-    self.frame = newframe;
-}
+@end
 
-- (CGPoint)bottomLeft
-{
-    CGFloat x = self.frame.origin.x;
-    CGFloat y = self.frame.origin.y + self.frame.size.height;
-    return CGPointMake(x, y);
-}
+@implementation UIView (HZLayout)
 
-- (void)setTopRight:(CGPoint)topRight
-{
-    CGRect newframe = self.frame;
-    newframe.origin.x = topRight.x-self.width;
-    newframe.origin.y = topRight.y;
-    self.frame = newframe;
-}
-
-- (CGPoint)topRight
-{
-    CGFloat x = self.frame.origin.x + self.frame.size.width;
-    CGFloat y = self.frame.origin.y;
-    return CGPointMake(x, y);
-}
-
-#pragma mark - Relative
 - (void)alignRight:(CGFloat)rightOffset
 {
     [self checkSuperView];
@@ -241,14 +217,6 @@
     self.left = view.right+offset;
 }
 
-- (UIImage *)saveImageWithScale:(float)scale
-{
-    UIGraphicsBeginImageContextWithOptions(self.frame.size, NO, scale);
-    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return image;
-}
 
 #pragma mark - Private Method
 - (void)checkSuperView

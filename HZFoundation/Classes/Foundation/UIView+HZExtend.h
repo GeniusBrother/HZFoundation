@@ -8,55 +8,123 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (HZExtend)
-
-/********location********/
-@property(nonatomic, assign) CGPoint origin;
-@property(nonatomic, assign) CGFloat top;
-@property(nonatomic, assign) CGFloat left;
-@property(nonatomic, assign) CGFloat bottom;
-@property(nonatomic, assign) CGFloat right;
-@property(nonatomic, assign) CGPoint bottomLeft;
-@property(nonatomic, assign) CGPoint bottomRight;
-@property(nonatomic, assign) CGPoint topRight;
-
-/********center********/
-@property(nonatomic, assign) CGFloat centerY;
-@property(nonatomic, assign) CGFloat centerX;
-
-/********size********/
-@property(nonatomic, assign) CGSize size;
-@property(nonatomic, assign) CGFloat height;
-@property(nonatomic, assign) CGFloat width;
-
-/********有了父视图，且在同一个视图树才能使用********/
-- (void)alignRight:(CGFloat)rightOffset;        //右边距离父视图rightOffset为负值
-- (void)alignBottom:(CGFloat)bottomOffset;      //下边距离父视图bottomOffset为负值
-- (void)alignCenter;                            //与父视图中心对齐
-- (void)alignCenterX;                           //与父视图的中心x对齐
-- (void)alignCenterY;
-
+NS_ASSUME_NONNULL_BEGIN
 
 /**
- *  底部在参照视图(frame已经确定)顶部offset距离 offset为负值，需先设置Height
+ Provides extensions for `UIView`.
+ */
+@interface UIView (HZExtend)
+
+/** Shortcut for frame.origin. */
+@property(nonatomic, assign) CGPoint origin;
+
+/** Shortcut for frame.origin.y. */
+@property(nonatomic, assign) CGFloat top;
+
+/** Shortcut for frame.origin.x. */
+@property(nonatomic, assign) CGFloat left;
+
+/** Shortcut for frame.origin.y + frame.size.height. */
+@property(nonatomic, assign) CGFloat bottom;
+
+/** Shortcut for frame.origin.x + frame.size.width. */
+@property(nonatomic, assign) CGFloat right;
+
+/** Shortcut for center.y. */
+@property(nonatomic, assign) CGFloat centerY;
+
+/** Shortcut for center.x. */
+@property(nonatomic, assign) CGFloat centerX;
+
+/** Shortcut for frame.size.height. */
+@property(nonatomic, assign) CGFloat height;
+
+/** Shortcut for frame.size.width. */
+@property(nonatomic, assign) CGFloat width;
+
+/** Shortcut for frame.size. */
+@property(nonatomic, assign) CGSize size;
+
+/** Returns the view's view controller. */
+@property (nullable, nonatomic, readonly) UIViewController *viewController;
+
+/**
+ Returns a snapshot image of the complete view hierarchy.
+ 
+ @param afterUpdates A Boolean value that indicates whether the snapshot should be rendered after recent changes have been incorporated.
+ Specify the value NO if you want to render a snapshot in the view hierarchy’s current state, which might not include recent changes.
+ */
+- (nullable UIImage *)snapshotImageAfterScreenUpdates:(BOOL)afterUpdates;
+
+
+
+@end
+
+@interface UIView (HZLayout)
+
+/**
+ Sets frame.origin.x = superview.width - frame.size.width + rightOffset.
+ 
+ @discussion If receiver don't have any superview, it will not work.
+ */
+- (void)alignRight:(CGFloat)rightOffset;
+
+/**
+ Sets frame.origin.y = superview.height - frame.size.height + bottomOffset.
+ 
+ @discussion If the receiver don't have any superview, this method has no effect.
+ */
+- (void)alignBottom:(CGFloat)bottomOffset;
+
+/**
+ Sets center = (superview.width/2,superview.height/2).
+ 
+ @discussion If the receiver don't have any superview, this method has no effect.
+ */
+- (void)alignCenter;
+
+/**
+ Sets center.x = superview.width/2.
+ 
+ @discussion If the receiver don't have any superview, this method has no effect.
+ */
+- (void)alignCenterX;
+
+/**
+ Sets center.y = superview.height/2.
+ 
+ @discussion If the receiver don't have any superview, this method has no effect.
+ */
+- (void)alignCenterY;
+
+/**
+ Sets frame.origin.y = view.frame.origin.y + offset - frame.size.height.
+ 
+ @discussion If the receiver don't have any superview, this method has no effect.
  */
 - (void)bottomOverView:(UIView *)view offset:(CGFloat)offset;
 
 /**
- *  顶部在参照视图(frame已经确定)底部offset距离 offset为正值
+ Sets frame.origin.y = CGRectGetMaxY(view) + offset.
+ 
+ @discussion If the receiver don't have any superview, this method has no effect.
  */
 - (void)topBehindView:(UIView *)view offset:(CGFloat)offset;
 
 /**
- *  右边在参照视图前面(frame已经确定)offset距离 offset为负值
+ Sets frame.origin.x = view.frame.origin.x + offset - frame.size.width.
+ 
+ @discussion If the receiver don't have any superview, this method has no effect.
  */
 - (void)rightOverView:(UIView *)view offset:(CGFloat)offset;
 
 /**
- *  左边边在参照视图后面(frame已经确定)offset距离 offset为正值
+ Sets frame.origin.x = CGRectGetMaxX(view)+ offset.
+ 
+ @discussion If the receiver don't have any superview, this method has no effect.
  */
 - (void)leftBehindView:(UIView *)view offset:(CGFloat)offset;
 
-
-- (UIImage *)saveImageWithScale:(float)scale;
 @end
+
+NS_ASSUME_NONNULL_END
