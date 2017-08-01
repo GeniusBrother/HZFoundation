@@ -1,9 +1,9 @@
 //
 //  NSMutableArray+HZExtend.h
-//  HZNetworkDemo
+//  HZFoundation <https://github.com/GeniusBrother/HZFoundation>
 //
-//  Created by xzh on 16/2/1.
-//  Copyright © 2016年 xzh. All rights reserved.
+//  Created by GeniusBrother on 16/2/1.
+//  Copyright (c) 2016 GeniusBrother. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

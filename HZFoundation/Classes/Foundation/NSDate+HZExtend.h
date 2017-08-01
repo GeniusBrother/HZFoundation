@@ -1,11 +1,10 @@
 //
 //  NSDate+HZExtend.h
-//  Pods
+//  HZFoundation <https://github.com/GeniusBrother/HZFoundation>
 //
-//  Created by xzh on 2017/2/17.
+//  Created by GeniusBrother on 2017/2/17.
+//  Copyright (c) 2017 GeniusBrother. All rights reserved.
 //
-//
-//yyyy-MM-dd HH:mm:ss
 #import <Foundation/Foundation.h>
 
 #define CURRENT_CALENDAR [NSCalendar currentCalendar]

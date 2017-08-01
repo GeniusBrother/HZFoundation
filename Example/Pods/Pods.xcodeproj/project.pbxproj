@@ -10,6 +10,8 @@
 		00C305AE9DF7206559EB72ACFD5D23A1 /* NSString+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E48D2B0BE4F7CDC2CB9D1D1E6F0D1F9 /* NSString+HZExtend.m */; };
 		1AC64C6AC86AFCA14145FB4B5523A78B /* Pods-HZFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 397B5884E8A617527A42EEEC5340873F /* Pods-HZFoundation-dummy.m */; };
 		22B67ABB2CB38076C31A52CBA2DB75D5 /* NSString+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 548B0DB42AD1CB3ADEE1E20F8D894BFC /* NSString+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		283D82581F306B9D00A54B20 /* UIView+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 283D82561F306B9D00A54B20 /* UIView+HZExtend.h */; };
+		283D82591F306B9D00A54B20 /* UIView+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 283D82571F306B9D00A54B20 /* UIView+HZExtend.m */; };
 		29C1718A2D7C2CA68AEA07C5FB2747DD /* NSDictionary+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = A208CD4D80B5E80B724D84FCFD173EC3 /* NSDictionary+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CF3A03E7230A7C3A27DDEB68FBAC2F0 /* NSData+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B3E66333C8E40012A3362F640B16B70 /* NSData+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E7A37EE0EEEE64036F83EDA5ADE780F /* NSArray+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AC2F395C092833D6B2661CBA0C06ED /* NSArray+HZExtend.m */; };
@@ -49,6 +51,8 @@
 		170EBF94586398BF3C3D087206AA60C1 /* HZFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HZFoundation.h; sourceTree = "<group>"; };
 		1B3E66333C8E40012A3362F640B16B70 /* NSData+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+HZExtend.h"; sourceTree = "<group>"; };
 		257767EFE10527A64656B0FE7C9D3DFE /* Pods-HZFoundation-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HZFoundation-acknowledgements.plist"; sourceTree = "<group>"; };
+		283D82561F306B9D00A54B20 /* UIView+HZExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HZExtend.h"; sourceTree = "<group>"; };
+		283D82571F306B9D00A54B20 /* UIView+HZExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HZExtend.m"; sourceTree = "<group>"; };
 		31AC2F395C092833D6B2661CBA0C06ED /* NSArray+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HZExtend.m"; sourceTree = "<group>"; };
 		397B5884E8A617527A42EEEC5340873F /* Pods-HZFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HZFoundation-dummy.m"; sourceTree = "<group>"; };
 		456A6ECB6817D1B86F87ACA5DB027F77 /* HZFoundation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HZFoundation.xcconfig; sourceTree = "<group>"; };
@@ -196,6 +200,8 @@
 		E47878C51FDF3089906A8B3EA7A6ED83 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				283D82561F306B9D00A54B20 /* UIView+HZExtend.h */,
+				283D82571F306B9D00A54B20 /* UIView+HZExtend.m */,
 				A2A653BDCEA88CEF47AD3AE23755C231 /* HZSingleton.h */,
 				995514A0C0CDDB692153AE696DB4AD29 /* NSArray+HZExtend.h */,
 				31AC2F395C092833D6B2661CBA0C06ED /* NSArray+HZExtend.m */,
@@ -241,6 +247,7 @@
 				B09ED20B4A6129DB1E17A9B9693FBD48 /* NSMutableArray+HZExtend.h in Headers */,
 				FF11A54D14B34414ECFEF4918E2EAEC6 /* NSObject+HZExtend.h in Headers */,
 				22B67ABB2CB38076C31A52CBA2DB75D5 /* NSString+HZExtend.h in Headers */,
+				283D82581F306B9D00A54B20 /* UIView+HZExtend.h in Headers */,
 				6A9EB9118FF197F58C372029ECC3FBF1 /* NSURL+HZExtend.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +325,7 @@
 				3E7A37EE0EEEE64036F83EDA5ADE780F /* NSArray+HZExtend.m in Sources */,
 				B5C8E395FA1D5A9BC1EE95A4BDF48FEF /* NSData+HZExtend.m in Sources */,
 				53FA94742F55CF7B748F40E574B3F58C /* NSDate+HZExtend.m in Sources */,
+				283D82591F306B9D00A54B20 /* UIView+HZExtend.m in Sources */,
 				40DC8A25E26BA715C37BE3C024459686 /* NSDictionary+HZExtend.m in Sources */,
 				DD2E9515DA5C22B2C3AB2D0C4732083D /* NSMutableArray+HZExtend.m in Sources */,
 				6BA264A4625EDB06E30C337C9296946A /* NSObject+HZExtend.m in Sources */,
