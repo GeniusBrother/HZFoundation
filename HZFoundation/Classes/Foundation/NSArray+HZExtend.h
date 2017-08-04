@@ -11,6 +11,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ Provide some some common method for `NSArray`.
+ */
 @interface NSArray (HZExtend)
 
 /**
@@ -47,15 +50,20 @@ typedef NSComparisonResult	(^NSMutableArrayCompareBlock)(id left, id right);
 - (void)safeRemoveObjectAtIndex:(NSInteger)index;
 
 /**
- *	添加不重复的元素
- *
- *	@param object  元素
- *  @param compare 指定比较的方式,基本数据类型可以传递nil
+ Adds unique objects.
+ 
+ @param object the object to be added.
+ @param compare A comparator block.
  */
 - (void)addUniqueObject:(id)object compare:(NSMutableArrayCompareBlock)compare;
 
 @end
 
+
+
+/**
+ Provide some some common method for `NSMutableArray`.
+ */
 @interface NSMutableArray (HZDeprecated)
 
 - (void)appendPageArray:(NSArray *)pageArray pageNumber:(NSInteger)currentPageNumber pageSize:(NSInteger)pageSize __deprecated_msg("已经废弃");
@@ -63,4 +71,5 @@ typedef NSComparisonResult	(^NSMutableArrayCompareBlock)(id left, id right);
 - (void)removeDataForPage:(NSInteger)page pageSize:(NSInteger)pageSize __deprecated_msg("已经废弃");
 
 @end
+
 NS_ASSUME_NONNULL_END

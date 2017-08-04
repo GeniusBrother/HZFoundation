@@ -52,7 +52,7 @@
 }
 
 - (void)addUniqueObject:(id)object compare:(NSMutableArrayCompareBlock)compare
-{
+{   
     __block BOOL isUnique = YES;
     [self enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if (compare) {

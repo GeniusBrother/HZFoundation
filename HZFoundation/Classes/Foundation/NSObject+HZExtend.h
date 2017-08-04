@@ -11,11 +11,32 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (HZExtend)
+
 /**
- *  判断是否非空
- *  既非NSNull且长度(字符串)或者count(集合)>0
+ Returns a BOOL value tells if the object is no empty.
+ NSArray/NString/NSDictionary/NSData
+ 
  */
 - (BOOL)isNoEmpty;
+
+/**
+ Swap two instance method's implementation in one class.
+ 
+ @param originalSel   Selector 1.
+ @param newSel        Selector 2.
+ @return              YES if swizzling succeed, otherwise, NO.
+ */
++ (BOOL)swizzleInstanceMethod:(SEL)originalSel with:(SEL)newSel;
+
+
+/**
+ Swap two class method's implementation in one class.
+ 
+ @param originalSel   Selector 1.
+ @param newSel        Selector 2.
+ @return              YES if swizzling succeed, otherwise, NO.
+ */
++ (BOOL)swizzleClassMethod:(SEL)originalSel with:(SEL)newSel;
 
 @end
 

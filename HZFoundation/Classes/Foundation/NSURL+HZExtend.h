@@ -11,12 +11,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSURL (HZExtend)
 
+/** Returns absoluteString but not contain the part of query. */
+@property(nonatomic, readonly) NSString *allPath;
+
 /**
- *  获取查询参数
- *
- *  @return 返回NSDictionary类型实例
+ Return a Dictionary which contains query params
  */
-- (NSDictionary *)queryDic;
+- (nullable NSDictionary *)queryDic;
+
 
 @end
 
