@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "HZFoundation" 
-  s.version      = "0.1.0"    
+  s.version      = "0.1.1"    
   s.summary      = "The Base Data Handle Library For IOS"
   s.homepage     = "https://github.com/GeniusBrother/HZFoundation.git"
   s.license      = "MIT"
