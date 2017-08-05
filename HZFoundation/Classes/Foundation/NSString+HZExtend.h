@@ -26,6 +26,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)md5String;
 
 /**
+ Returns a new UUID NSString. e.g. "C3278C30-2B3D-4E1E-7AC2-B6FFB24A07C1"
+ */
++ (NSString *)UUIDString;
+
+/**
  URL encode a string in utf-8.
  
  @return the encode string.
@@ -58,6 +63,7 @@ NS_ASSUME_NONNULL_BEGIN
  Returns NSMakeRange(0, self.length).
  */
 - (NSRange)rangeOfAll;
+
 
 @end
 

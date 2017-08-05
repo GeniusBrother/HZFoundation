@@ -139,12 +139,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (nullable NSDate *)dateWithString:(NSString *)dateString format:(NSString *)format;
 
 /**
- Return a formate date string using the separator. For Example 2017-08-08
+ Return a formate date string using the separator. e.g 2017-08-08
  */
 - (NSString *)formatDateWithSeparator:(NSString *)separator;
 
 /**
- Return a formate time string using the separator. For Example 08:08
+ Return a formate time string using the separator. e.g 08:08
  */
 - (NSString *)formatTimeWithSeparator:(NSString *)separator;
 

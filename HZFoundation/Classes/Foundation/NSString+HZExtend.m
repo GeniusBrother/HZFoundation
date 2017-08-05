@@ -70,6 +70,13 @@
     return range.length != 0;
 }
 
++ (NSString *)UUIDString
+{
+    CFUUIDRef uuid = CFUUIDCreate(NULL);
+    CFStringRef string = CFUUIDCreateString(NULL, uuid);
+    CFRelease(uuid);
+    return (__bridge_transfer NSString *)string;
+}
 
 
 

@@ -137,6 +137,7 @@
 				TargetAttributes = {
 					28E29F601F2ED803009F3A34 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = HDQ5J8KWBR;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -348,7 +349,9 @@
 			baseConfigurationReference = 898501759C2EA5FA247FF8B1 /* Pods-HZFoundation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HDQ5J8KWBR;
 				INFOPLIST_FILE = HZFoundation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hz.HZFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -360,7 +363,9 @@
 			baseConfigurationReference = 7CB9BD2C360ADEF13B0EF55A /* Pods-HZFoundation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HDQ5J8KWBR;
 				INFOPLIST_FILE = HZFoundation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hz.HZFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,6 +391,7 @@
 				28E29F7A1F2ED803009F3A34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

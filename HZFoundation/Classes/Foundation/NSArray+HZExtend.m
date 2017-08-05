@@ -20,6 +20,30 @@
     return [self objectAtIndex:index];
 }
 
+- (NSArray *)subarrayWithSafeRange:(NSRange)range
+{
+    if ( 0 == self.count )
+        return nil;
+    
+    if ( range.location >= self.count )
+        return nil;
+    
+    if ( range.location + range.length >= self.count )
+        return nil;
+    
+    return [self subarrayWithRange:NSMakeRange(range.location, range.length)];
+}
+
+- (NSArray *)map:(id  _Nonnull (^)(id _Nonnull))block
+{
+    __block NSMutableArray *array = [NSMutableArray arrayWithCapacity:[self count]];
+    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [array addObject:block(obj)];
+    }];
+    return array;
+}
+
+
 - (NSArray *)reversedArray
 {
     return self.reverseObjectEnumerator.allObjects;

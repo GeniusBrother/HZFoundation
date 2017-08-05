@@ -24,6 +24,20 @@ NS_ASSUME_NONNULL_BEGIN
 - (nullable id)objectAtSafeIndex:(NSInteger)index;
 
 /**
+ Returns a new array containing the receiving array’s elements that fall within the limits specified by a given range, or return nil if range isn’t within the receiving array’s range of elements.
+ 
+ @param A range within the receiving array’s range of elements.
+ */
+- (nullable NSArray *)subarrayWithSafeRange:(NSRange)range;
+
+/**
+ Applies the callback to the elements of the given arrays.
+ 
+ @return an new array containing all the elements of receiver after applying the callback function to each one.
+ */
+- (NSArray *)map:(id (^)(id obj))block;
+
+/**
  Returns a reversed Array
  */
 - (NSArray *)reversedArray;
