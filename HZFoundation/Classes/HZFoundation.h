@@ -21,6 +21,7 @@
 #import "UIDevice+HZExtend.h"
 #import "UIView+HZExtend.h"
 #import "UIColor+HZExtend.h"
+#import "UIResponder+HZExtend.h"
 #import "NSObject+HZKVO.h"
 
 #endif /* _HZFOUNDATION_ */
