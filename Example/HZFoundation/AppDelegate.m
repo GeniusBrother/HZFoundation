@@ -8,7 +8,10 @@
 
 #import "AppDelegate.h"
 #import <HZFoundation/HZFoundation.h>
+
 @interface AppDelegate ()
+
+@property(nonatomic, copy) NSString *name;
 
 @end
 
@@ -16,6 +19,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
 
     return YES;
 }

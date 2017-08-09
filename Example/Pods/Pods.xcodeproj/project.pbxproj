@@ -7,37 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09A886D837EEB453EDA92C277B103128 /* UIColor+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 20238334C79C42FC0454C13C453AFA86 /* UIColor+HZExtend.m */; };
-		12162E5ACD186EBDF3BB9343A1B53B9E /* HZSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 397A7EE7E0CCB5219ECAB41EE31BE7D7 /* HZSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1890CCAF5C2FAFC7046B0B2A30B57405 /* NSURL+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FBB222209271208790179536DC80B7 /* NSURL+HZExtend.m */; };
+		0A6B4D1DC981D599FDBFC41E41541235 /* HZMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 20780AF6C7F76AC5499E6AD59C76D408 /* HZMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A8876D1473EC2CE7F15FC6D34E89EAF /* NSURL+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 59B0B75C80A98B6701E283CA34EA797E /* NSURL+HZExtend.m */; };
+		147A71D82A8F5DE634E49EA557265450 /* NSArray+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D97DE384C0ABE8E0D8D6A2B6FB804D /* NSArray+HZExtend.m */; };
 		1AC64C6AC86AFCA14145FB4B5523A78B /* Pods-HZFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 397B5884E8A617527A42EEEC5340873F /* Pods-HZFoundation-dummy.m */; };
-		1C2B0869AFEFC46F4C677650734CA257 /* NSString+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C91B7081D33DEF91C78895898122C9C /* NSString+HZExtend.m */; };
-		2AD9957413F4B808E96347DFED09AA2E /* NSTimer+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C66905CE18E8FE87D63E12B0935D79 /* NSTimer+HZExtend.m */; };
-		2BA6DFEB132EE4E20264521372DCE3E6 /* UIDevice+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E1F0050461AB7F0CB19F96AACD275E /* UIDevice+HZExtend.m */; };
-		2ED19C53004F58DF69F208E046BB937C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		2FFBC6723DB99A80B4687426597928CC /* NSDictionary+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0D99FFB14E42B68EDE089EDE223BCD /* NSDictionary+HZExtend.m */; };
-		4CECD5B60780D2D91DEA660DDB5E00A4 /* HZFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = E000A44407C991F91707F753C589290E /* HZFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		58E6B90CA0D44CA2615DAC8856A39AB0 /* UIView+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = CDD971F1E3AD9042F9D010F894943BDC /* UIView+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B61888AC64415BBE55A897C45CE09ED /* UIView+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 70087D29A60F95676177A742CDF33478 /* UIView+HZExtend.m */; };
-		5D252280708C9AF6A987AA5E7A79EC3B /* NSObject+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = B29E9AC84BC986D83A132C7201D3734B /* NSObject+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E2B7FA47BC088044075104874EEBB36 /* NSArray+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = E75660BF31C37DAF7BD9E727E12D6221 /* NSArray+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6EEA3BDA9181E817D4DE28651CBE77DB /* NSDate+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A7F2A4B34FB6FB246DA2643FF6318A6 /* NSDate+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74A75602AD2DD02EDEE678EF56DF0DED /* NSData+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = B3539FC321CD769A4EB1E9AC6ADC4A8C /* NSData+HZExtend.m */; };
-		7AE465BB94D403C65351FAA3D5A49F89 /* NSDate+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CF087677A8CFE11A518D6F11B233A7 /* NSDate+HZExtend.m */; };
-		8711F42184E46F5D862ED2E5E4DE570E /* UIApplication+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 539C6127CB0280B85BA1B3457A059180 /* UIApplication+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8CAB6AC26E20827B88D543B3535E69E2 /* NSObject+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5F46C2AFDBBA7B617EBDC77926581 /* NSObject+HZExtend.m */; };
-		949E1025D58F728CFBE3D6513505DCF6 /* NSData+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = A73EE074CB4F487B5BFE3C59505A2548 /* NSData+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC8FBB580FC21CF74746576F360F024C /* HZMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CB172CCA552D70D0D8B94385925B287 /* HZMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BBF7805E2F996660F056F18B9B8A3F7F /* NSURL+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 85D094AA422A932BFF0979AC0ECD7AEC /* NSURL+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3AEB227E9DD89AE53D07BA82816E018 /* UIApplication+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3BD24B9ACE44585E39B4D34332E920 /* UIApplication+HZExtend.m */; };
-		CD4DAEFABB8C513BBA2A16D62BBBBC5E /* HZFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD73FD0A1EAEFDFCE41A8FBAC39EEB08 /* HZFoundation-dummy.m */; };
-		CF2C1ECC9E60677B1634097607C2BE58 /* NSTimer+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 10A130BA41C5280BF9BA2EC7AED29EEA /* NSTimer+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD4138B80E20A2100D85D1374A8578D1 /* UIDevice+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 85F6F8BC36DE6ABBB458C390F0BD0308 /* UIDevice+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FB7499AC480BAEB0CE07DE5FA86E4C2 /* NSTimer+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BCF0A1DE5D517CF99190B1F6BE6563 /* NSTimer+HZExtend.m */; };
+		22233843D352C0E7900388B4502F6E59 /* NSString+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EF98549B480F6532E3190561D4F489F /* NSString+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C3CAE31B2D7BAE1A09B94AE1F28AB5E /* NSDictionary+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EB8033E0648431D716E7983D553991 /* NSDictionary+HZExtend.m */; };
+		32F62C36826F07506ED08C1E8E9352F9 /* UIApplication+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 9584087AA4D7D36521F1EF704E9002C2 /* UIApplication+HZExtend.m */; };
+		36AC0D1A951D20C050B1D978746F7E0E /* UIView+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9EAE84B30E71205303D9D7E3EF7D8 /* UIView+HZExtend.m */; };
+		3E84C219684416BD9E42FB78D2EA119D /* UIColor+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 48A4D6815F360E5F3B9BF6891D6595F1 /* UIColor+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A79178016415E7A7F5CD6E85D838E26 /* HZFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD73FD0A1EAEFDFCE41A8FBAC39EEB08 /* HZFoundation-dummy.m */; };
+		4E1EF87D8CF4F26D424923D08ECDDD4B /* UIView+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = F88F241EE0C9335C0DF612AD715887D5 /* UIView+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6168B7D210709B30920B54F7D9BE5F6E /* UIDevice+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCB3D36BCF2D937595AECDAD4FF2E7E /* UIDevice+HZExtend.m */; };
+		6F147E3C825B1433BA627BB2EC5E3EB3 /* NSTimer+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = C02CB480D38908746F882FB1B2D96152 /* NSTimer+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		731769F9A3215B615AA1CC2D25DF8C7B /* NSURL+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 97F8B61FF15D0487CA59A6333D683406 /* NSURL+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78625BF77349170CCD8AA7D776A56FBC /* NSObject+HZKVO.h in Headers */ = {isa = PBXBuildFile; fileRef = AF463DE8E3D84975B705F29757277B36 /* NSObject+HZKVO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		877B917AC7D5B326048C271D6D14AABB /* HZFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 646B40927A2534A799B9E7E877206C7A /* HZFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		917012C504F14100F146F60944EE73A7 /* NSObject+HZKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5BD5CAA801B9798566055D2E1E4001 /* NSObject+HZKVO.m */; };
+		97C2BAB9DC568A4FF7D8C75C76F38328 /* NSDate+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC87493B254C0EA3BA0646F3520B558 /* NSDate+HZExtend.m */; };
+		A68BD099AB58B54205F52276A95370DE /* NSString+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E013B9009D17A021BAD149844358A8 /* NSString+HZExtend.m */; };
+		AA18579FE21C572A5F67B91E777535FC /* NSObject+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A550FE4E9BE76D5D502FEF1799AAE7B /* NSObject+HZExtend.m */; };
+		B5AB20ADC1864779941AE07B1EDA0CB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		B6CAA784728CDA4D232B737D1758A0B2 /* UIColor+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E4E28D014708DDDD0581584D003042 /* UIColor+HZExtend.m */; };
+		B950323AC1C740026B723E96FC5E7780 /* NSDictionary+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE48863002ABCF420A2D4F1CEF36CF3 /* NSDictionary+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2F86998E2939E70A78F7070AE6BE5AF /* NSArray+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 80E7551F44CF029324166264D6726093 /* NSArray+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D06A5ED2174D6D2D9720991DCB33CAB0 /* UIDevice+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D0E7C2BA44A52EB5EB9191B33FD40AB /* UIDevice+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6F1EE140775AA1D11FAF1A0E94F4F02 /* NSObject+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = D0C27B0F04FA96DD062C72A5A4BF74A6 /* NSObject+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D951FFAD36374D56F6F83F14F8ADE97F /* NSData+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C6316AA66BCC100EC0827A1BD9337EB /* NSData+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDD80EC8B8F550109DB2A51DA4C6AD75 /* UIApplication+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 0419D600087EE8C83B3AB293F195825D /* UIApplication+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE01560C2B7A12BA612C8016D6687AA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		E5DCE4F153D341404485D67F3A3BD25E /* UIColor+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = F758782D8AA514CEEEF1E61EDC9B2911 /* UIColor+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E71BADCAB566479038229510C0B8F798 /* NSArray+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC35438E08DAF1E098DDE3C2D79A41B /* NSArray+HZExtend.m */; };
-		EC525BDE0D8131BBA68FB68F12F4317E /* NSString+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A26719836B314F0A37C97D84EBBEE04 /* NSString+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDFF72B0E7113C50F04A8A0964B9BA16 /* NSDictionary+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 397C1EC4FC50D8841636490377A5778E /* NSDictionary+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E08538CCADEBEFEFAF723F46483FDE61 /* HZSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4603D3A17EC8DEB788D82623BBA2F564 /* HZSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8262B617B55BAA4DC38142E86C1BACD /* NSDate+HZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A1D47DCE15C70E999ADE94AD8283FB9 /* NSDate+HZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDB451FE70767E6DEEE5DE7C82793BCD /* NSData+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF544FFF47E9C26FB37A4A25A620445 /* NSData+HZExtend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,53 +47,55 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 19E3185701D09A71981CB1525B23C6AB;
+			remoteGlobalIDString = C9E813B18B15D1A0302CBC1224058BE6;
 			remoteInfo = HZFoundation;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0419D600087EE8C83B3AB293F195825D /* UIApplication+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIApplication+HZExtend.h"; sourceTree = "<group>"; };
 		04A89F0D9F7EEF7CBDF095F8336468D3 /* Pods-HZFoundation-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HZFoundation-acknowledgements.markdown"; sourceTree = "<group>"; };
+		05BCF0A1DE5D517CF99190B1F6BE6563 /* NSTimer+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+HZExtend.m"; sourceTree = "<group>"; };
 		06A618B359129BFBC79E7BEBC824B4A8 /* HZFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HZFoundation-prefix.pch"; sourceTree = "<group>"; };
-		10A130BA41C5280BF9BA2EC7AED29EEA /* NSTimer+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSTimer+HZExtend.h"; sourceTree = "<group>"; };
 		147A58DBA11B69F7809E56A44E2506D9 /* libPods-HZFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HZFoundation.a"; path = "libPods-HZFoundation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AC5F46C2AFDBBA7B617EBDC77926581 /* NSObject+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HZExtend.m"; sourceTree = "<group>"; };
-		20238334C79C42FC0454C13C453AFA86 /* UIColor+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HZExtend.m"; sourceTree = "<group>"; };
+		1A550FE4E9BE76D5D502FEF1799AAE7B /* NSObject+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HZExtend.m"; sourceTree = "<group>"; };
+		20780AF6C7F76AC5499E6AD59C76D408 /* HZMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HZMacro.h; sourceTree = "<group>"; };
 		257767EFE10527A64656B0FE7C9D3DFE /* Pods-HZFoundation-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HZFoundation-acknowledgements.plist"; sourceTree = "<group>"; };
-		2CB172CCA552D70D0D8B94385925B287 /* HZMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HZMacro.h; sourceTree = "<group>"; };
-		397A7EE7E0CCB5219ECAB41EE31BE7D7 /* HZSingleton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HZSingleton.h; sourceTree = "<group>"; };
+		25D97DE384C0ABE8E0D8D6A2B6FB804D /* NSArray+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HZExtend.m"; sourceTree = "<group>"; };
 		397B5884E8A617527A42EEEC5340873F /* Pods-HZFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HZFoundation-dummy.m"; sourceTree = "<group>"; };
-		397C1EC4FC50D8841636490377A5778E /* NSDictionary+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HZExtend.h"; sourceTree = "<group>"; };
-		3C91B7081D33DEF91C78895898122C9C /* NSString+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+HZExtend.m"; sourceTree = "<group>"; };
 		456A6ECB6817D1B86F87ACA5DB027F77 /* HZFoundation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HZFoundation.xcconfig; sourceTree = "<group>"; };
-		539C6127CB0280B85BA1B3457A059180 /* UIApplication+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIApplication+HZExtend.h"; sourceTree = "<group>"; };
+		4603D3A17EC8DEB788D82623BBA2F564 /* HZSingleton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HZSingleton.h; sourceTree = "<group>"; };
+		48A4D6815F360E5F3B9BF6891D6595F1 /* UIColor+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+HZExtend.h"; sourceTree = "<group>"; };
+		4EF98549B480F6532E3190561D4F489F /* NSString+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+HZExtend.h"; sourceTree = "<group>"; };
+		4FA9EAE84B30E71205303D9D7E3EF7D8 /* UIView+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+HZExtend.m"; sourceTree = "<group>"; };
 		597635A2CBF7CBD806E1CFE062D0ED41 /* Pods-HZFoundation-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HZFoundation-frameworks.sh"; sourceTree = "<group>"; };
-		5A7F2A4B34FB6FB246DA2643FF6318A6 /* NSDate+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+HZExtend.h"; sourceTree = "<group>"; };
+		59B0B75C80A98B6701E283CA34EA797E /* NSURL+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSURL+HZExtend.m"; sourceTree = "<group>"; };
+		5DC87493B254C0EA3BA0646F3520B558 /* NSDate+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HZExtend.m"; sourceTree = "<group>"; };
+		5DE48863002ABCF420A2D4F1CEF36CF3 /* NSDictionary+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HZExtend.h"; sourceTree = "<group>"; };
 		61A9BF5E49F03AF414ACA5553506765F /* Pods-HZFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HZFoundation.debug.xcconfig"; sourceTree = "<group>"; };
-		63E1F0050461AB7F0CB19F96AACD275E /* UIDevice+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+HZExtend.m"; sourceTree = "<group>"; };
-		70087D29A60F95676177A742CDF33478 /* UIView+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+HZExtend.m"; sourceTree = "<group>"; };
+		646B40927A2534A799B9E7E877206C7A /* HZFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HZFoundation.h; sourceTree = "<group>"; };
 		75798778640A32B0723CDD1CA28726CF /* Pods-HZFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HZFoundation.release.xcconfig"; sourceTree = "<group>"; };
-		80FBB222209271208790179536DC80B7 /* NSURL+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSURL+HZExtend.m"; sourceTree = "<group>"; };
-		85D094AA422A932BFF0979AC0ECD7AEC /* NSURL+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSURL+HZExtend.h"; sourceTree = "<group>"; };
-		85F6F8BC36DE6ABBB458C390F0BD0308 /* UIDevice+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDevice+HZExtend.h"; sourceTree = "<group>"; };
-		8A26719836B314F0A37C97D84EBBEE04 /* NSString+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+HZExtend.h"; sourceTree = "<group>"; };
+		7C6316AA66BCC100EC0827A1BD9337EB /* NSData+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+HZExtend.h"; sourceTree = "<group>"; };
+		80E7551F44CF029324166264D6726093 /* NSArray+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+HZExtend.h"; sourceTree = "<group>"; };
+		80EB8033E0648431D716E7983D553991 /* NSDictionary+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HZExtend.m"; sourceTree = "<group>"; };
+		8A1D47DCE15C70E999ADE94AD8283FB9 /* NSDate+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+HZExtend.h"; sourceTree = "<group>"; };
+		8B5BD5CAA801B9798566055D2E1E4001 /* NSObject+HZKVO.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HZKVO.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A73EE074CB4F487B5BFE3C59505A2548 /* NSData+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+HZExtend.h"; sourceTree = "<group>"; };
-		AB3BD24B9ACE44585E39B4D34332E920 /* UIApplication+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+HZExtend.m"; sourceTree = "<group>"; };
-		B29E9AC84BC986D83A132C7201D3734B /* NSObject+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+HZExtend.h"; sourceTree = "<group>"; };
-		B3539FC321CD769A4EB1E9AC6ADC4A8C /* NSData+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+HZExtend.m"; sourceTree = "<group>"; };
+		9584087AA4D7D36521F1EF704E9002C2 /* UIApplication+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+HZExtend.m"; sourceTree = "<group>"; };
+		97F8B61FF15D0487CA59A6333D683406 /* NSURL+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSURL+HZExtend.h"; sourceTree = "<group>"; };
+		9D0E7C2BA44A52EB5EB9191B33FD40AB /* UIDevice+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDevice+HZExtend.h"; sourceTree = "<group>"; };
+		A8E4E28D014708DDDD0581584D003042 /* UIColor+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HZExtend.m"; sourceTree = "<group>"; };
+		AF463DE8E3D84975B705F29757277B36 /* NSObject+HZKVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+HZKVO.h"; sourceTree = "<group>"; };
 		BD73FD0A1EAEFDFCE41A8FBAC39EEB08 /* HZFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HZFoundation-dummy.m"; sourceTree = "<group>"; };
+		C02CB480D38908746F882FB1B2D96152 /* NSTimer+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSTimer+HZExtend.h"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CDD971F1E3AD9042F9D010F894943BDC /* UIView+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+HZExtend.h"; sourceTree = "<group>"; };
+		D0C27B0F04FA96DD062C72A5A4BF74A6 /* NSObject+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+HZExtend.h"; sourceTree = "<group>"; };
 		D1FB5EAA27D0D086279B7C3874CE4D99 /* libHZFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libHZFoundation.a; path = libHZFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8C66905CE18E8FE87D63E12B0935D79 /* NSTimer+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+HZExtend.m"; sourceTree = "<group>"; };
-		D8CF087677A8CFE11A518D6F11B233A7 /* NSDate+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HZExtend.m"; sourceTree = "<group>"; };
-		DFC35438E08DAF1E098DDE3C2D79A41B /* NSArray+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HZExtend.m"; sourceTree = "<group>"; };
-		E000A44407C991F91707F753C589290E /* HZFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HZFoundation.h; sourceTree = "<group>"; };
-		E75660BF31C37DAF7BD9E727E12D6221 /* NSArray+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+HZExtend.h"; sourceTree = "<group>"; };
-		ED0D99FFB14E42B68EDE089EDE223BCD /* NSDictionary+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HZExtend.m"; sourceTree = "<group>"; };
-		F758782D8AA514CEEEF1E61EDC9B2911 /* UIColor+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+HZExtend.h"; sourceTree = "<group>"; };
+		DBF544FFF47E9C26FB37A4A25A620445 /* NSData+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+HZExtend.m"; sourceTree = "<group>"; };
+		E2E013B9009D17A021BAD149844358A8 /* NSString+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+HZExtend.m"; sourceTree = "<group>"; };
+		F88F241EE0C9335C0DF612AD715887D5 /* UIView+HZExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+HZExtend.h"; sourceTree = "<group>"; };
 		FE9260F476418BE4F059358E9D66034A /* Pods-HZFoundation-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HZFoundation-resources.sh"; sourceTree = "<group>"; };
+		FFCB3D36BCF2D937595AECDAD4FF2E7E /* UIDevice+HZExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+HZExtend.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +107,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63ACF7A938BE678875437474189106AE /* Frameworks */ = {
+		BE1DFC7C34177926A3D95B7B8B1F0163 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ED19C53004F58DF69F208E046BB937C /* Foundation.framework in Frameworks */,
+				B5AB20ADC1864779941AE07B1EDA0CB6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,16 +156,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		34C7C08609D09BC65A2E0BAABB88A310 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				E000A44407C991F91707F753C589290E /* HZFoundation.h */,
-				C3AF8A1DF3918134C193A037163ED608 /* Foundation */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		598D109A8B216EC9E01B51F0A41168D3 /* Pods-HZFoundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +169,16 @@
 			);
 			name = "Pods-HZFoundation";
 			path = "Target Support Files/Pods-HZFoundation";
+			sourceTree = "<group>";
+		};
+		5DC7B9A6DB1E7069FCA68C107A59E658 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				646B40927A2534A799B9E7E877206C7A /* HZFoundation.h */,
+				83D7EBA24FB01BBB8B5529F84704B9FD /* Foundation */,
+			);
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -196,10 +200,46 @@
 			);
 			sourceTree = "<group>";
 		};
+		83D7EBA24FB01BBB8B5529F84704B9FD /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				20780AF6C7F76AC5499E6AD59C76D408 /* HZMacro.h */,
+				4603D3A17EC8DEB788D82623BBA2F564 /* HZSingleton.h */,
+				80E7551F44CF029324166264D6726093 /* NSArray+HZExtend.h */,
+				25D97DE384C0ABE8E0D8D6A2B6FB804D /* NSArray+HZExtend.m */,
+				7C6316AA66BCC100EC0827A1BD9337EB /* NSData+HZExtend.h */,
+				DBF544FFF47E9C26FB37A4A25A620445 /* NSData+HZExtend.m */,
+				8A1D47DCE15C70E999ADE94AD8283FB9 /* NSDate+HZExtend.h */,
+				5DC87493B254C0EA3BA0646F3520B558 /* NSDate+HZExtend.m */,
+				5DE48863002ABCF420A2D4F1CEF36CF3 /* NSDictionary+HZExtend.h */,
+				80EB8033E0648431D716E7983D553991 /* NSDictionary+HZExtend.m */,
+				D0C27B0F04FA96DD062C72A5A4BF74A6 /* NSObject+HZExtend.h */,
+				1A550FE4E9BE76D5D502FEF1799AAE7B /* NSObject+HZExtend.m */,
+				AF463DE8E3D84975B705F29757277B36 /* NSObject+HZKVO.h */,
+				8B5BD5CAA801B9798566055D2E1E4001 /* NSObject+HZKVO.m */,
+				4EF98549B480F6532E3190561D4F489F /* NSString+HZExtend.h */,
+				E2E013B9009D17A021BAD149844358A8 /* NSString+HZExtend.m */,
+				C02CB480D38908746F882FB1B2D96152 /* NSTimer+HZExtend.h */,
+				05BCF0A1DE5D517CF99190B1F6BE6563 /* NSTimer+HZExtend.m */,
+				97F8B61FF15D0487CA59A6333D683406 /* NSURL+HZExtend.h */,
+				59B0B75C80A98B6701E283CA34EA797E /* NSURL+HZExtend.m */,
+				0419D600087EE8C83B3AB293F195825D /* UIApplication+HZExtend.h */,
+				9584087AA4D7D36521F1EF704E9002C2 /* UIApplication+HZExtend.m */,
+				48A4D6815F360E5F3B9BF6891D6595F1 /* UIColor+HZExtend.h */,
+				A8E4E28D014708DDDD0581584D003042 /* UIColor+HZExtend.m */,
+				9D0E7C2BA44A52EB5EB9191B33FD40AB /* UIDevice+HZExtend.h */,
+				FFCB3D36BCF2D937595AECDAD4FF2E7E /* UIDevice+HZExtend.m */,
+				F88F241EE0C9335C0DF612AD715887D5 /* UIView+HZExtend.h */,
+				4FA9EAE84B30E71205303D9D7E3EF7D8 /* UIView+HZExtend.m */,
+			);
+			name = Foundation;
+			path = Foundation;
+			sourceTree = "<group>";
+		};
 		B6419ED4A64ACB6B6456FBED9227F550 /* HZFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				34C7C08609D09BC65A2E0BAABB88A310 /* Classes */,
+				5DC7B9A6DB1E7069FCA68C107A59E658 /* Classes */,
 			);
 			name = HZFoundation;
 			path = HZFoundation;
@@ -213,40 +253,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C3AF8A1DF3918134C193A037163ED608 /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				2CB172CCA552D70D0D8B94385925B287 /* HZMacro.h */,
-				397A7EE7E0CCB5219ECAB41EE31BE7D7 /* HZSingleton.h */,
-				E75660BF31C37DAF7BD9E727E12D6221 /* NSArray+HZExtend.h */,
-				DFC35438E08DAF1E098DDE3C2D79A41B /* NSArray+HZExtend.m */,
-				A73EE074CB4F487B5BFE3C59505A2548 /* NSData+HZExtend.h */,
-				B3539FC321CD769A4EB1E9AC6ADC4A8C /* NSData+HZExtend.m */,
-				5A7F2A4B34FB6FB246DA2643FF6318A6 /* NSDate+HZExtend.h */,
-				D8CF087677A8CFE11A518D6F11B233A7 /* NSDate+HZExtend.m */,
-				397C1EC4FC50D8841636490377A5778E /* NSDictionary+HZExtend.h */,
-				ED0D99FFB14E42B68EDE089EDE223BCD /* NSDictionary+HZExtend.m */,
-				B29E9AC84BC986D83A132C7201D3734B /* NSObject+HZExtend.h */,
-				1AC5F46C2AFDBBA7B617EBDC77926581 /* NSObject+HZExtend.m */,
-				8A26719836B314F0A37C97D84EBBEE04 /* NSString+HZExtend.h */,
-				3C91B7081D33DEF91C78895898122C9C /* NSString+HZExtend.m */,
-				10A130BA41C5280BF9BA2EC7AED29EEA /* NSTimer+HZExtend.h */,
-				D8C66905CE18E8FE87D63E12B0935D79 /* NSTimer+HZExtend.m */,
-				85D094AA422A932BFF0979AC0ECD7AEC /* NSURL+HZExtend.h */,
-				80FBB222209271208790179536DC80B7 /* NSURL+HZExtend.m */,
-				539C6127CB0280B85BA1B3457A059180 /* UIApplication+HZExtend.h */,
-				AB3BD24B9ACE44585E39B4D34332E920 /* UIApplication+HZExtend.m */,
-				F758782D8AA514CEEEF1E61EDC9B2911 /* UIColor+HZExtend.h */,
-				20238334C79C42FC0454C13C453AFA86 /* UIColor+HZExtend.m */,
-				85F6F8BC36DE6ABBB458C390F0BD0308 /* UIDevice+HZExtend.h */,
-				63E1F0050461AB7F0CB19F96AACD275E /* UIDevice+HZExtend.m */,
-				CDD971F1E3AD9042F9D010F894943BDC /* UIView+HZExtend.h */,
-				70087D29A60F95676177A742CDF33478 /* UIView+HZExtend.m */,
-			);
-			name = Foundation;
-			path = Foundation;
-			sourceTree = "<group>";
-		};
 		F53208F31A6FDA31B5E0ED7CEC1D8226 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,48 +264,32 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7EA78D70B3286B9CFD63D455FDF7A749 /* Headers */ = {
+		FA38453440B50230F207F906671A4128 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CECD5B60780D2D91DEA660DDB5E00A4 /* HZFoundation.h in Headers */,
-				AC8FBB580FC21CF74746576F360F024C /* HZMacro.h in Headers */,
-				12162E5ACD186EBDF3BB9343A1B53B9E /* HZSingleton.h in Headers */,
-				6E2B7FA47BC088044075104874EEBB36 /* NSArray+HZExtend.h in Headers */,
-				949E1025D58F728CFBE3D6513505DCF6 /* NSData+HZExtend.h in Headers */,
-				6EEA3BDA9181E817D4DE28651CBE77DB /* NSDate+HZExtend.h in Headers */,
-				EDFF72B0E7113C50F04A8A0964B9BA16 /* NSDictionary+HZExtend.h in Headers */,
-				5D252280708C9AF6A987AA5E7A79EC3B /* NSObject+HZExtend.h in Headers */,
-				EC525BDE0D8131BBA68FB68F12F4317E /* NSString+HZExtend.h in Headers */,
-				CF2C1ECC9E60677B1634097607C2BE58 /* NSTimer+HZExtend.h in Headers */,
-				BBF7805E2F996660F056F18B9B8A3F7F /* NSURL+HZExtend.h in Headers */,
-				8711F42184E46F5D862ED2E5E4DE570E /* UIApplication+HZExtend.h in Headers */,
-				E5DCE4F153D341404485D67F3A3BD25E /* UIColor+HZExtend.h in Headers */,
-				DD4138B80E20A2100D85D1374A8578D1 /* UIDevice+HZExtend.h in Headers */,
-				58E6B90CA0D44CA2615DAC8856A39AB0 /* UIView+HZExtend.h in Headers */,
+				877B917AC7D5B326048C271D6D14AABB /* HZFoundation.h in Headers */,
+				0A6B4D1DC981D599FDBFC41E41541235 /* HZMacro.h in Headers */,
+				E08538CCADEBEFEFAF723F46483FDE61 /* HZSingleton.h in Headers */,
+				C2F86998E2939E70A78F7070AE6BE5AF /* NSArray+HZExtend.h in Headers */,
+				D951FFAD36374D56F6F83F14F8ADE97F /* NSData+HZExtend.h in Headers */,
+				E8262B617B55BAA4DC38142E86C1BACD /* NSDate+HZExtend.h in Headers */,
+				B950323AC1C740026B723E96FC5E7780 /* NSDictionary+HZExtend.h in Headers */,
+				D6F1EE140775AA1D11FAF1A0E94F4F02 /* NSObject+HZExtend.h in Headers */,
+				78625BF77349170CCD8AA7D776A56FBC /* NSObject+HZKVO.h in Headers */,
+				22233843D352C0E7900388B4502F6E59 /* NSString+HZExtend.h in Headers */,
+				6F147E3C825B1433BA627BB2EC5E3EB3 /* NSTimer+HZExtend.h in Headers */,
+				731769F9A3215B615AA1CC2D25DF8C7B /* NSURL+HZExtend.h in Headers */,
+				DDD80EC8B8F550109DB2A51DA4C6AD75 /* UIApplication+HZExtend.h in Headers */,
+				3E84C219684416BD9E42FB78D2EA119D /* UIColor+HZExtend.h in Headers */,
+				D06A5ED2174D6D2D9720991DCB33CAB0 /* UIDevice+HZExtend.h in Headers */,
+				4E1EF87D8CF4F26D424923D08ECDDD4B /* UIView+HZExtend.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		19E3185701D09A71981CB1525B23C6AB /* HZFoundation */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C1E4D8226C7B19EF7AEEC798D1DB8F43 /* Build configuration list for PBXNativeTarget "HZFoundation" */;
-			buildPhases = (
-				DACAE9185FE1EF774448AAA1B24BFF1D /* Sources */,
-				63ACF7A938BE678875437474189106AE /* Frameworks */,
-				7EA78D70B3286B9CFD63D455FDF7A749 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = HZFoundation;
-			productName = HZFoundation;
-			productReference = D1FB5EAA27D0D086279B7C3874CE4D99 /* libHZFoundation.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		2062675BD04B0D10B2580FB12EF41C8D /* Pods-HZFoundation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89BC53E078B45BF69272FC703218EEEE /* Build configuration list for PBXNativeTarget "Pods-HZFoundation" */;
@@ -315,6 +305,23 @@
 			name = "Pods-HZFoundation";
 			productName = "Pods-HZFoundation";
 			productReference = 147A58DBA11B69F7809E56A44E2506D9 /* libPods-HZFoundation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C9E813B18B15D1A0302CBC1224058BE6 /* HZFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47736567AD2B7C907ED253CF70A79B4D /* Build configuration list for PBXNativeTarget "HZFoundation" */;
+			buildPhases = (
+				9A354ECD771E612886DE8B2BDA30473B /* Sources */,
+				BE1DFC7C34177926A3D95B7B8B1F0163 /* Frameworks */,
+				FA38453440B50230F207F906671A4128 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HZFoundation;
+			productName = HZFoundation;
+			productReference = D1FB5EAA27D0D086279B7C3874CE4D99 /* libHZFoundation.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -338,30 +345,31 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				19E3185701D09A71981CB1525B23C6AB /* HZFoundation */,
+				C9E813B18B15D1A0302CBC1224058BE6 /* HZFoundation */,
 				2062675BD04B0D10B2580FB12EF41C8D /* Pods-HZFoundation */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DACAE9185FE1EF774448AAA1B24BFF1D /* Sources */ = {
+		9A354ECD771E612886DE8B2BDA30473B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD4DAEFABB8C513BBA2A16D62BBBBC5E /* HZFoundation-dummy.m in Sources */,
-				E71BADCAB566479038229510C0B8F798 /* NSArray+HZExtend.m in Sources */,
-				74A75602AD2DD02EDEE678EF56DF0DED /* NSData+HZExtend.m in Sources */,
-				7AE465BB94D403C65351FAA3D5A49F89 /* NSDate+HZExtend.m in Sources */,
-				2FFBC6723DB99A80B4687426597928CC /* NSDictionary+HZExtend.m in Sources */,
-				8CAB6AC26E20827B88D543B3535E69E2 /* NSObject+HZExtend.m in Sources */,
-				1C2B0869AFEFC46F4C677650734CA257 /* NSString+HZExtend.m in Sources */,
-				2AD9957413F4B808E96347DFED09AA2E /* NSTimer+HZExtend.m in Sources */,
-				1890CCAF5C2FAFC7046B0B2A30B57405 /* NSURL+HZExtend.m in Sources */,
-				C3AEB227E9DD89AE53D07BA82816E018 /* UIApplication+HZExtend.m in Sources */,
-				09A886D837EEB453EDA92C277B103128 /* UIColor+HZExtend.m in Sources */,
-				2BA6DFEB132EE4E20264521372DCE3E6 /* UIDevice+HZExtend.m in Sources */,
-				5B61888AC64415BBE55A897C45CE09ED /* UIView+HZExtend.m in Sources */,
+				4A79178016415E7A7F5CD6E85D838E26 /* HZFoundation-dummy.m in Sources */,
+				147A71D82A8F5DE634E49EA557265450 /* NSArray+HZExtend.m in Sources */,
+				FDB451FE70767E6DEEE5DE7C82793BCD /* NSData+HZExtend.m in Sources */,
+				97C2BAB9DC568A4FF7D8C75C76F38328 /* NSDate+HZExtend.m in Sources */,
+				2C3CAE31B2D7BAE1A09B94AE1F28AB5E /* NSDictionary+HZExtend.m in Sources */,
+				AA18579FE21C572A5F67B91E777535FC /* NSObject+HZExtend.m in Sources */,
+				917012C504F14100F146F60944EE73A7 /* NSObject+HZKVO.m in Sources */,
+				A68BD099AB58B54205F52276A95370DE /* NSString+HZExtend.m in Sources */,
+				1FB7499AC480BAEB0CE07DE5FA86E4C2 /* NSTimer+HZExtend.m in Sources */,
+				0A8876D1473EC2CE7F15FC6D34E89EAF /* NSURL+HZExtend.m in Sources */,
+				32F62C36826F07506ED08C1E8E9352F9 /* UIApplication+HZExtend.m in Sources */,
+				B6CAA784728CDA4D232B737D1758A0B2 /* UIColor+HZExtend.m in Sources */,
+				6168B7D210709B30920B54F7D9BE5F6E /* UIDevice+HZExtend.m in Sources */,
+				36AC0D1A951D20C050B1D978746F7E0E /* UIView+HZExtend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +387,7 @@
 		F219D9F60BEA1EABC91F1F5545E20221 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HZFoundation;
-			target = 19E3185701D09A71981CB1525B23C6AB /* HZFoundation */;
+			target = C9E813B18B15D1A0302CBC1224058BE6 /* HZFoundation */;
 			targetProxy = F332A6DC10281E47BD2BD108EF0D1644 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -429,6 +437,29 @@
 			};
 			name = Debug;
 		};
+		1328B4A053D74636BEF0408C09D5BD73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 456A6ECB6817D1B86F87ACA5DB027F77 /* HZFoundation.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HZFoundation/HZFoundation-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		3A6B09BB68FC1095873C5846B55BF189 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 75798778640A32B0723CDD1CA28726CF /* Pods-HZFoundation.release.xcconfig */;
@@ -451,29 +482,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
-		};
-		3E6F7BC41874D5425973E8F36829061C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 456A6ECB6817D1B86F87ACA5DB027F77 /* HZFoundation.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HZFoundation/HZFoundation-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
 		};
 		3E7584044B07F8659DD44A5E9156FDD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -538,7 +546,7 @@
 			};
 			name = Release;
 		};
-		62EEB7B5FD37DE0F40789AD8D9064E39 /* Release */ = {
+		FD94CC6487978BB34AEA54F066619B8F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 456A6ECB6817D1B86F87ACA5DB027F77 /* HZFoundation.xcconfig */;
 			buildSettings = {
@@ -573,20 +581,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		47736567AD2B7C907ED253CF70A79B4D /* Build configuration list for PBXNativeTarget "HZFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1328B4A053D74636BEF0408C09D5BD73 /* Debug */,
+				FD94CC6487978BB34AEA54F066619B8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		89BC53E078B45BF69272FC703218EEEE /* Build configuration list for PBXNativeTarget "Pods-HZFoundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3E7584044B07F8659DD44A5E9156FDD6 /* Debug */,
 				3A6B09BB68FC1095873C5846B55BF189 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C1E4D8226C7B19EF7AEEC798D1DB8F43 /* Build configuration list for PBXNativeTarget "HZFoundation" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3E6F7BC41874D5425973E8F36829061C /* Debug */,
-				62EEB7B5FD37DE0F40789AD8D9064E39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,9 +1,9 @@
 //
-//  NSObject+HzExtend.m
-//  ZHFramework
+//  NSObject+HZExtend.m
+//  HZFoundation <https://github.com/GeniusBrother/HZFoundation>
 //
-//  Created by xzh. on 15/7/26.
-//  Copyright (c) 2015年 xzh. All rights reserved.
+//  Created by GeniusBrother on 15/7/26.
+//  Copyright (c) 2015 GeniusBrother. All rights reserved.
 //
 
 #import "NSObject+HZExtend.h"

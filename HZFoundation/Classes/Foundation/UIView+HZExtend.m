@@ -1,9 +1,9 @@
 //
-//  UIView+HZExtend.m
-//  ZHFramework
+//  UIApplication+HZExtend.m
+//  HZFoundation <https://github.com/GeniusBrother/HZFoundation>
 //
-//  Created by xzh. on 15/7/26.
-//  Copyright (c) 2015年 xzh. All rights reserved.
+//  Created by GeniusBrother on 2017/8/4.
+//  Copyright (c) 2017 GeniusBrother. All rights reserved.
 //
 
 #import "UIView+HZExtend.h"

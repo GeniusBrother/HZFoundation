@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- Provide some some common method for `NSDictionary`.
+ Provides extensions method for `NSDictionary`.
  */
 @interface NSDictionary (HZExtend)
 

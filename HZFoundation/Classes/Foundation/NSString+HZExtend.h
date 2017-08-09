@@ -10,7 +10,9 @@
 #import "NSObject+HZExtend.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
+/**
+ Provides extensions method for `NSString`.
+ */
 @interface NSString (HZExtend)
 
 /**
