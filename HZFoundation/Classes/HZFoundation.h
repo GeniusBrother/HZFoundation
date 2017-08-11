@@ -24,6 +24,8 @@
 #import "UIResponder+HZExtend.h"
 #import "NSObject+HZKVO.h"
 #import "HZConst.h"
+#import "UIAlertController+HZExtend.h"
+#import "UIScrollView+HZExtend.h"
 
 
 #endif /* _HZFOUNDATION_ */
