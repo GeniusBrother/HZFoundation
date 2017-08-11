@@ -1,0 +1,1 @@
+../../../../../HZFoundation/Classes/Foundation/HZConst.h

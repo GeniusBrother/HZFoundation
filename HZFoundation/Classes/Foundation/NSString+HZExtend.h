@@ -62,6 +62,31 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)matchesRegx:(NSString *)regex options:(NSRegularExpressionOptions)options;
 
 /**
+ Match the regular expression, and executes a given block using each object in the matches.
+ 
+ @param regex    The regular expression
+ @param options  The matching options to report.
+ @param block    The block to apply to elements in the array of matches.
+ */
+
+- (void)enumerateRegexMatches:(NSString *)regex
+                      options:(NSRegularExpressionOptions)options
+                   usingBlock:(void (^)(NSString *match, NSRange matchRange, BOOL *stop))block;
+
+/**
+ Returns a new string containing matching regular expressions replaced with the template string.
+ 
+ @param regex       The regular expression
+ @param options     The matching options to report.
+ @param replacement The substitution template used when replacing matching instances.
+ 
+ @return A string with matching regular expressions replaced by the template string.
+ */
+- (NSString *)stringByReplacingRegex:(NSString *)regex
+                             options:(NSRegularExpressionOptions)options
+                          withString:(NSString *)replacement;
+
+/**
  Returns NSMakeRange(0, self.length).
  */
 - (NSRange)rangeOfAll;

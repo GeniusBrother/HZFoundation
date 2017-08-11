@@ -23,6 +23,8 @@
 #import "UIColor+HZExtend.h"
 #import "UIResponder+HZExtend.h"
 #import "NSObject+HZKVO.h"
+#import "HZConst.h"
+
 
 #endif /* _HZFOUNDATION_ */
 

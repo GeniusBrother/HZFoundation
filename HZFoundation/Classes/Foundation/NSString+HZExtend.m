@@ -71,6 +71,22 @@
     return range.length != 0;
 }
 
+- (void)enumerateRegexMatches:(NSString *)regex options:(NSRegularExpressionOptions)options usingBlock:(void (^)(NSString * _Nonnull, NSRange, BOOL * _Nonnull))block
+{
+    NSRegularExpression *regExp = [NSRegularExpression regularExpressionWithPattern:regex options:options error:nil];
+    if (!regExp) return;
+    [regExp enumerateMatchesInString:self options:kNilOptions range:NSMakeRange(0, self.length) usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
+        block([self substringWithRange:result.range], result.range, stop);
+    }];
+}
+
+- (NSString *)stringByReplacingRegex:(NSString *)regex options:(NSRegularExpressionOptions)options withString:(NSString *)replacement
+{
+    NSRegularExpression *pattern = [NSRegularExpression regularExpressionWithPattern:regex options:options error:nil];
+    if (!pattern) return self;
+    return [pattern stringByReplacingMatchesInString:self options:0 range:NSMakeRange(0, [self length]) withTemplate:replacement];
+}
+
 + (NSString *)UUIDString
 {
     CFUUIDRef uuid = CFUUIDCreate(NULL);
