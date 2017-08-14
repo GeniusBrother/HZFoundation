@@ -1,4 +1,4 @@
-HZURLManager
+HZFoundation
 ==============
 
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/GeniusBrother/HZFoundation/master/LICENSE)&nbsp;
@@ -18,9 +18,9 @@ Installation
 ==============
 ### CocoaPods
 
-1. Add `pod 'HZURLManager` to your Podfile.
+1. Add `pod 'HZFoundation` to your Podfile.
 2. Run `pod install` or `pod update`.
-3. Import \<HZURLManager/HZURLManager.h\>.
+3. Import \<HZFoundation/HZFoundation.h\>.
 
 Documentation
 ==============
