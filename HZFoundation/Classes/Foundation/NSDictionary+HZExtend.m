@@ -60,7 +60,7 @@
     return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 }
 
-- (NSInteger)integerValueForKeyPath:(NSString *)keyPath default:(NSInteger)def
+- (NSInteger)integerValueForKeyPath:(NSString *)keyPath def:(NSInteger)def
 {
     id value = [self objectForKeyPath:keyPath];
     
