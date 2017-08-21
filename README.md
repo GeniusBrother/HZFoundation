@@ -7,7 +7,7 @@ HZFoundation
 [![Support](https://img.shields.io/badge/support-iOS%208%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)&nbsp;
 
 A set of useful categories for Foundation and UIKit.<br/>
-(It's a component of [HZExtend](https://github.com/ibireme/HZExtend))
+(It's a component of [HZExtend](https://github.com/GeniusBrother/HZExtend))
 
 Contact
 ==============
