@@ -32,4 +32,4 @@ This library requires `iOS 8.0+` and `Xcode 8.0+`.
 
 License
 ==============
-HZURLManager is provided under the MIT license. See LICENSE file for details.
+HZORM is provided under the MIT license. See LICENSE file for details.
