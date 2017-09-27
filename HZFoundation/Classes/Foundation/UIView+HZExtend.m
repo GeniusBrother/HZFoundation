@@ -154,6 +154,7 @@ static const char kBlock = '\0';
 
 - (void)tapPeformBlock:(HZViewTapBlock)block
 {
+    self.userInteractionEnabled = YES;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
     [self addGestureRecognizer:tap];
     [self setBlock:block];
