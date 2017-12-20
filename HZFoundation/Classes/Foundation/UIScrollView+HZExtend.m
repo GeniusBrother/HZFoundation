@@ -49,19 +49,22 @@ static const char kDirection = '\0';
 
 - (CGFloat)insetTop
 {
-    return self.contentInset.top;
+    return self.safeContentInset.top;
 }
 
 - (void)setInsetTop:(CGFloat)insetTop
 {
-    UIEdgeInsets insets = self.contentInset;
-    insets.top = insetTop;
-    self.contentInset = insets;
+    UIEdgeInsets inset = self.contentInset;
+    inset.top = insetTop;
+    if (@available(iOS 11, *)) {
+        inset.top -= (self.adjustedContentInset.top - self.contentInset.top);
+    }
+    self.contentInset = inset;
 }
 
 - (CGFloat)insetBottom
 {
-    return self.contentInset.bottom;
+    return self.safeContentInset.bottom;
 }
 
 - (void)setInsetBottom:(CGFloat)insetBottom
@@ -69,6 +72,52 @@ static const char kDirection = '\0';
     UIEdgeInsets insets = self.contentInset;
     insets.bottom = insetBottom;
     self.contentInset = insets;
+    
+    UIEdgeInsets inset = self.contentInset;
+    inset.bottom = insetBottom;
+    if (@available(iOS 11, *)) {
+        inset.bottom -= (self.adjustedContentInset.bottom - self.contentInset.bottom);
+    }
+    self.contentInset = inset;
+}
+
+- (CGFloat)insetLeft
+{
+    return self.safeContentInset.left;
+}
+
+- (void)setInsetLeft:(CGFloat)insetLeft
+{
+    UIEdgeInsets inset = self.contentInset;
+    inset.left = insetLeft;
+    if (@available(iOS 11, *)) {
+        inset.left -= (self.adjustedContentInset.left - self.contentInset.left);
+    }
+    self.contentInset = inset;
+}
+
+- (CGFloat)insetRight
+{
+    return self.safeContentInset.right;
+}
+
+- (void)setInsetRight:(CGFloat)insetRight
+{
+    UIEdgeInsets inset = self.contentInset;
+    inset.right = insetRight;
+    if (@available(iOS 11, *)) {
+        inset.right -= (self.adjustedContentInset.right - self.contentInset.right);
+    }
+    self.contentInset = inset;
+}
+
+- (UIEdgeInsets)safeContentInset
+{
+    if (@available(iOS 11, *)) {
+        return self.adjustedContentInset;
+    }else {
+        return self.contentInset;
+    }
 }
 
 - (UIImage *)imageRepresentation
