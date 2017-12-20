@@ -7,9 +7,12 @@
 //
 
 #import "UIScrollView+HZExtend.h"
-
+#import <objc/runtime.h>
+static const char kLastContentOffset = '\0';
+static const char kDirection = '\0';
 @implementation UIScrollView (HZExtend)
 
+#pragma mark - Data
 - (CGFloat)contentWidth
 {
     return self.contentSize.width;
@@ -113,4 +116,50 @@
     
 }
 
+#pragma mark - Observer
+- (void)calculateScrollDirectionWithExpand:(HZScrollViewContentExpand)expand
+{
+    CGFloat offsetDistance = expand == HZScrollViewContentExpandHorizontal?self.offsetX:self.offsetY;
+    
+    if (offsetDistance > self.lastContentOffset && self.direction != HZScrollDirectionGo) {  //go
+        self.direction = HZScrollDirectionGo;
+    }else if (offsetDistance < self.lastContentOffset  && self.direction != HZScrollDirectionBack) {  //back
+        self.direction = HZScrollDirectionBack;
+    }
+
+    self.lastContentOffset = offsetDistance;
+}
+
+#pragma mark - Properties
+- (CGFloat)lastContentOffset
+{
+    NSNumber *value = objc_getAssociatedObject(self, &kLastContentOffset);
+    return [value doubleValue];
+}
+
+- (void)setLastContentOffset:(CGFloat)lastContentOffset
+{
+    CGFloat value = [self lastContentOffset];
+    if (lastContentOffset != value) {
+        [self willChangeValueForKey:@"lastContentOffsetDistance"];
+        objc_setAssociatedObject(self, &kLastContentOffset, @(lastContentOffset), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        [self didChangeValueForKey:@"lastContentOffsetDistance"];
+    }
+}
+
+- (HZScrollDirection)direction
+{
+    NSNumber *value = objc_getAssociatedObject(self, &kDirection);
+    return [value doubleValue];
+}
+
+- (void)setDirection:(HZScrollDirection)direction
+{
+    NSInteger value = [self direction];
+    if (direction != value) {
+        [self willChangeValueForKey:@"direction"];
+        objc_setAssociatedObject(self, &kDirection, @(direction), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        [self didChangeValueForKey:@"direction"];
+    }
+}
 @end

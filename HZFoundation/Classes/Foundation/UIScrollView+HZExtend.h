@@ -10,6 +10,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger, HZScrollDirection) {
+    HZScrollDirectionNone,
+    HZScrollDirectionBack,
+    HZScrollDirectionGo
+};
+
+typedef NS_ENUM(NSInteger, HZScrollViewContentExpand) {
+    HZScrollViewContentExpandVertical,
+    HZScrollViewContentExpandHorizontal,
+};
+
 @interface UIScrollView (HZExtend)
 
 @property(nonatomic, assign) CGFloat contentWidth;
@@ -20,6 +31,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, assign) CGFloat insetTop;
 @property(nonatomic, assign) CGFloat insetBottom;
+
+@property(nonatomic, assign, readonly) HZScrollDirection direction;
+
+@property(nonatomic, assign) CGFloat lastContentOffsetDistance;
 
 - (UIImage *)imageRepresentation;
 @end
