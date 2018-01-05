@@ -14,6 +14,7 @@
 #import "NSDictionary+HZExtend.h"
 #import "NSArray+HZExtend.h"
 #import "NSData+HZExtend.h"
+#import "NSDate+HZExtend.h"
 #import "NSURL+HZExtend.h"
 #import "NSObject+HZExtend.h"
 #import "NSDate+HZExtend.h"
@@ -26,7 +27,7 @@
 #import "HZConst.h"
 #import "UIAlertController+HZExtend.h"
 #import "UIScrollView+HZExtend.h"
-
+#import "NSTimer+HZExtend.h"
 
 #endif /* _HZFOUNDATION_ */
 
