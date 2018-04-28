@@ -28,6 +28,7 @@
 #define HZStatusBarHeight (HZIsIphoneX?44.f:20.f)
 #define HZHomeIndicatorHeight (HZIsIphoneX?34.f:0)
 #define HZNavBarContentHeight 44.f
+#define HZNavBarAddtionalHeight (HZIsIphoneX?24.f:0)
 
 //引用
 #define HZWeakObj(Obj) __weak typeof(Obj) weak##_##Obj = Obj
