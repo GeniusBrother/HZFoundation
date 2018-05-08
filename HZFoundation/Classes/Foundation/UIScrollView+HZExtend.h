@@ -33,7 +33,7 @@ typedef NS_ENUM(NSInteger, HZScrollViewContentExpand) {
 @property(nonatomic, assign) CGFloat insetBottom;
 @property(nonatomic, assign) CGFloat insetLeft;
 @property(nonatomic, assign) CGFloat insetRight;
-@property(nonatomic, assign) UIEdgeInsets safeContentInset;
+@property(nonatomic, readonly) UIEdgeInsets safeContentInset;
 
 @property(nonatomic, assign, readonly) HZScrollDirection direction;
 
@@ -41,7 +41,7 @@ typedef NS_ENUM(NSInteger, HZScrollViewContentExpand) {
 
 - (UIImage *)imageRepresentation;
 
-- (void)calculateScrollDirectionWithExpand:(HZScrollViewContentExpand)expand;
+- (void)didScrollWithExpand:(HZScrollViewContentExpand)expand;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -166,7 +166,7 @@ static const char kDirection = '\0';
 }
 
 #pragma mark - Observer
-- (void)calculateScrollDirectionWithExpand:(HZScrollViewContentExpand)expand
+- (void)didScrollWithExpand:(HZScrollViewContentExpand)expand
 {
     CGFloat offsetDistance = expand == HZScrollViewContentExpandHorizontal?self.offsetX:self.offsetY;
     
