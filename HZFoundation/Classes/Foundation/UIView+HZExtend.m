@@ -246,6 +246,15 @@ static const char kBlock = '\0';
     self.left = view.right+offset;
 }
 
+- (NSLayoutConstraint *)constraintForAttribute:(NSLayoutAttribute)attribute
+{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"firstAttribute = %d && firstItem = %@",attribute, self];
+    NSArray *constrains = (attribute == NSLayoutAttributeWidth || attribute == NSLayoutAttributeHeight)?self.constraints : [self.superview constraints];
+    NSArray *matchedConstraints = [constrains filteredArrayUsingPredicate:predicate];
+    if (matchedConstraints.count == 0) return nil;
+    return matchedConstraints.firstObject;
+}
+
 
 #pragma mark - Private Method
 - (void)checkSuperView

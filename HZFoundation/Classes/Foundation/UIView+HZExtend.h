@@ -132,6 +132,11 @@ typedef void(^HZViewTapBlock)(__kindof UIView *view);
  */
 - (void)leftBehindView:(UIView *)view offset:(CGFloat)offset;
 
+/**
+ The constraint of the view by specific attribute.
+ */
+- (NSLayoutConstraint *)constraintForAttribute:(NSLayoutAttribute)attribute;
+
 @end
 
 NS_ASSUME_NONNULL_END
