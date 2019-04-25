@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "HZFoundation" 
-  s.version      = "0.1.5"    
-  s.summary      = "The Base Data Handle Library For IOS"
+  s.version      = "0.1.6"    
+  s.summary      = "The Useful Utility Library For IOS"
   s.homepage     = "https://github.com/GeniusBrother/HZFoundation.git"
   s.license      = "MIT"
   s.author             = { "GeniusBrother" => "zuohong_xie@163.com" }
